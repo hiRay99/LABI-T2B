@@ -7,5 +7,8 @@ namespace WebRay.Models
 {
     public enum Categoria
     {
+        Eletronica = 1,
+        Classica = 2,
+        Gospel = 3
     }
 }

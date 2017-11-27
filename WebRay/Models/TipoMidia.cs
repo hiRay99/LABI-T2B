@@ -5,7 +5,9 @@ using System.Web;
 
 namespace WebRay.Models
 {
-    public class TipoMidia
+    public enum TipoMidia
     {
-        Eletronica = 1,
+        DVD = 1,
+        CD = 2,
+        PENDRIVE = 3
     }
