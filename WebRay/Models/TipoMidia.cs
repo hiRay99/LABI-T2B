@@ -11,3 +11,4 @@ namespace WebRay.Models
         CD = 2,
         PENDRIVE = 3
     }
+}
