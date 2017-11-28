@@ -27,9 +27,10 @@
             <th></th>
         </tr>
     </thead>
-    @foreach (var item in Model)
-    {
-        <tbody>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Titulo)
@@ -49,9 +50,9 @@
                     @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 </td>
             </tr>
-        </tbody>
-    }
 
+        }
+    </tbody>
 </table>
 @section scripts { <link href="~/Content/DataTables/css/dataTables.bootstrap.css" rel="stylesheet" />
     <link href="~/Content/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" />
