@@ -29,5 +29,7 @@ namespace WebRay.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebRay.Models.Musica> Musicas { get; set; }
     }
 }
