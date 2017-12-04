@@ -18,8 +18,14 @@ namespace WebRay.Controllers
         public ActionResult Index()
         {
             return View(db.Musicas.ToList());
-        }
+         }
+        public ActionResult ConferirTitulo(string Titulo)
+        {
+            return Json(db.Musicas
+                        .All(m => m.Titulo.ToLower() != Titulo.ToLower())
+            , JsonRequestBehavior.AllowGet);
 
+        }
         // GET: Musica/Details/5
         public ActionResult Details(int? id)
         {
